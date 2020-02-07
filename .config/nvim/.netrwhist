@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/localcc/.config/polybar'
+let g:netrw_dirhist_2='/home/localcc/.config/bspwm'
+let g:netrw_dirhist_1='/home/localcc/.config/nvim/plugged/coc.nvim'

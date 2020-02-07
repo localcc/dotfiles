@@ -8,3 +8,4 @@
 1. Run Updater/UpdateEverything.sh
 2. Install betterlockscreen with trizen -install betterlockscreen
 3. Configure lightdm
+4. Copy etc folder to /etc

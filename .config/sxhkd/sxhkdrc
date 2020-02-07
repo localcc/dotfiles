@@ -1,0 +1,77 @@
+# Launch kitty
+ctrl + Return
+	kitty
+
+
+
+#dmenu
+alt + d
+	rofi -show run
+
+# screenshoter
+Print + {_, ctrl}
+	flameshot {gui, full}
+
+# Password manager
+F2
+	rofi-pass
+
+
+#Lock screen
+ctrl + shift + l
+        betterlockscreen -l dim --off 60000
+
+# BSPWM SPECIFIC
+
+
+# Reload bspwm
+
+
+# Close current window
+alt + shift + q
+	bspc node focused -c
+
+
+# SHIFT - reverse most of time
+
+# Moving to workspaces
+# Workspaces
+alt + {_, shift +}{1-9,0}
+	bspc {desktop -f, node -d} '^{1-9,10}'
+
+alt + {_, shift +}{Left, Right, Up, Down}
+	bspc node {--focus, --swap} {west, east, north, south}
+
+
+# Change parent
+ctrl + {Left,Right,Up,Down}
+	bspc node -n {west, east, north south}
+
+# last window 
+
+alt + Tab
+	bspc node --focus last
+
+# rotate workspace
+ctrl + r + {_, alt} + {_, shift}
+	bspc node {@/,@parent} -R {90, -90}
+
+# resize window
+ctrl + alt + {Left,Right,Up,Down}
+	bspc node -z {left -20 20,right 20 20,top 20 -20,bottom 20 20}
+
+ctrl + alt + shift + {Left,Right,Up,Down}
+	bspc node -z {left 20 20,right -20 20,top 20 20,bottom 20 -20}
+
+#move floating
+alt + Super_L + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# make floating
+alt + shift + {_, shift} + space
+	bspc node -t {floating, tiled}
+
+# full screen mode
+alt + {_, shift} + f
+	bspc node -t {fullscreen, tiled}
+

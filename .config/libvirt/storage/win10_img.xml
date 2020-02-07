@@ -1,0 +1,19 @@
+<!--
+WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
+OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
+  virsh pool-edit win10_img
+or other application using the libvirt API.
+-->
+
+<pool type='dir'>
+  <name>win10_img</name>
+  <uuid>2a2b3629-834a-4f16-b190-a0429e9f3fb1</uuid>
+  <capacity unit='bytes'>0</capacity>
+  <allocation unit='bytes'>0</allocation>
+  <available unit='bytes'>0</available>
+  <source>
+  </source>
+  <target>
+    <path>/home/localcc/Winkvm/win10_img</path>
+  </target>
+</pool>

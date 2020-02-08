@@ -1,1 +1,0 @@
-trizen -install discord-canary

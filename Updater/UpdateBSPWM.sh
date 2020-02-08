@@ -1,1 +1,0 @@
-trizen -install bspwm-git

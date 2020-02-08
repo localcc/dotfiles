@@ -1,2 +1,0 @@
-trizen -install jetbrains-toolbox
-

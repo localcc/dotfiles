@@ -25,4 +25,4 @@ bspc rule -a discord desktop=^9
 bspc rule -a firefox desktop=^2
 bspc rule -a "jetbrains space" desktop=^5
 #launching applications
-discord &
+discord-canary &

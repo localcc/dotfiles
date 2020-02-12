@@ -17,9 +17,14 @@ F2
 	rofi-pass
 
 
+
 #Lock screen
 ctrl + shift + l
         betterlockscreen -l dim --off 60000
+
+#Log out
+ctrl + alt + shift + l
+       dm-tool lock
 
 # BSPWM SPECIFIC
 

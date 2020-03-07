@@ -10,7 +10,7 @@ alt + d
 
 # screenshoter
 Print + {_, ctrl}
-	flameshot {gui, full}
+	flameshot {gui, full -c}
 
 # Password manager
 F2

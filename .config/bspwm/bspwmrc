@@ -1,19 +1,19 @@
 #! /bin/sh
-
+ 
 sxhkd &
-compton &
+picom --vsync &
 dunst -config /home/localcc/.config/dunst/dunstrc &
-polybar example &
-feh --bg-fill ~/Wallpapers/6.png &
+feh --bg-fill ~/Wallpapers/1.jpg &&
+wal -o /home/localcc/Scripts/rofi_fixer.sh -i /home/localcc/Wallpapers/1.jpg
+polybar main &
 #exec --no-startup-id feh --bg-fill ~/Wallpapers/1.jpg
-bspc monitor -d I II III IV V VI VII VIII IX X
-bash /home/localcc/Scripts/SpaceChanger.sh &
-bspc config border_width         2
-bspc config window_gap          12
-bspc config focused_border_color '#342b8b'
-bspc config normal_border_color '#171840'
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+#bash /home/localcc/Scripts/SpaceChanger.sh &
+bspc config border_width         0
+bspc config window_gap          6
+bspc config top_padding		18
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -22,7 +22,7 @@ setxkbmap -option 'grp:win_space_toggle'
 kitty &
 #declaring rules
 bspc rule -a discord desktop=^9
-bspc rule -a firefox desktop=^2
-bspc rule -a "jetbrains space" desktop=^5
+#bspc rule -a firefox desktop=^2
+#bspc rule -a "jetbrains space" desktop=^5
 #launching applications
 discord-canary &

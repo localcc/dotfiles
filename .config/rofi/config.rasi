@@ -1,0 +1,14 @@
+configuration {
+	theme: "~/.cache/wal/colors-rofi-dark-fixed.rasi";
+	width: 100;
+	lines: 3;
+	font: "System San Francisco Display 14";
+	bw: 0;
+	padding: 200;
+	show-icons: true;
+	eh: 1;
+	line-margin: 20;
+	separator-style: "solid";
+	hide-scrollbar: true;
+	fullscreen: true;
+}

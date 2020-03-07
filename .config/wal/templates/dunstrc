@@ -1,0 +1,43 @@
+[global]
+monitor=0
+follow=mouse
+geometry="320x5-15+35"
+indicate_hidden=yes
+shrink=no
+transparency=25
+notification_height=s0
+separator_height=2
+padding=10
+horizontal_padding=10
+frame_width=1
+frame_color="{color4}"
+sort = yes
+idle_threshold = 30
+font = JetBrains Mono 10
+alignment = center
+word_wrap = yes
+format = "<b>%s</b>: %b"
+markup = full
+mouse_left_click = close_current
+mouse_right_click = do_action
+
+[shortcuts]
+   close = ctrl+shift+q
+   history = ctrl+grave
+   context = ctrl+shift+period
+
+[urgency_low]
+   background = "{background}"
+   foreground = "{foreground}"
+   timeout = 3
+
+[urgency_normal]
+   background = "{background}"
+   foreground = "{foreground}"
+   timeout = 3
+
+[urgency_critical]
+   background = "{background}"
+   foreground = "{foreground}"
+   frame_color = "{color5}"
+   timeout = 0

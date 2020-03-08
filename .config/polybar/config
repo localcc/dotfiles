@@ -8,7 +8,7 @@ alert = ${xrdb:color3:#222}
 
 [bar/main]
 monitor =
-width = 
+width = 100%
 ;width = 2000
 height = 20
 offset-x = 0
@@ -69,7 +69,7 @@ tray-position = right
 
 ;tray-offset-x = -236
 
-;wm-restack = i3
+wm-restack = bspwm
 
 ;bar floating state; behind or above other windows
 override-redirect = false
@@ -113,7 +113,7 @@ format-prefix = "   "
 format-prefix-foreground = #1DB954
 interval = 1
 format = <label>
-exec = python /home/localcc/Scripts/spotify_status.py -f '{artist} - {song}'
+exec = python $HOME/Scripts/spotify_status.py -f '{artist} - {song}'
 
 ;[module/mpd]
 ;type = internal/mpd

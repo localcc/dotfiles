@@ -8,7 +8,7 @@ alert = ${xrdb:color3:#222}
 
 [bar/main]
 monitor =
-width = 1680
+width = 
 ;width = 2000
 height = 20
 offset-x = 0

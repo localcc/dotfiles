@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -sf $HOME/.config/dunst/dunstrc $HOME/.cache/wal/dunstrc
+ln -sf $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc

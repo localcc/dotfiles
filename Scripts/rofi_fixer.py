@@ -1,5 +1,7 @@
-rofi_file = open("/home/localcc/.cache/wal/colors-rofi-dark.rasi", 'r')
-out_file = open("/home/localcc/.cache/wal/colors-rofi-dark-fixed.rasi", "w+")
+import os
+home_var = os.environ['HOME']
+rofi_file = open(home_var + "/.cache/wal/colors-rofi-dark.rasi", 'r')
+out_file = open(home_var + "/.cache/wal/colors-rofi-dark-fixed.rasi", "w+")
 line = rofi_file.readline()
 while line:
     done_line = line

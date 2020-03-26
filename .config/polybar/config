@@ -59,8 +59,8 @@ font-9 = Font Awesome 5 Free:pixelsize=10.2;2
 
 ;modules-left = menu i3
 modules-left = 
-modules-center = bspwm spotify_status
-modules-right = date
+modules-center = bspwm
+modules-right = spotify_status date
 
 tray-position = right
 

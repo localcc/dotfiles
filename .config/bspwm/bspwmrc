@@ -3,8 +3,10 @@
 sxhkd &
 picom --vsync &
 dunst -config $HOME/.config/dunst/dunstrc &
-feh --bg-fill $HOME/Wallpapers/1.jpg &&
-wal -o $HOME/Scripts/Xresources_ln.sh -o $HOME/Scripts/rofi_fixer.sh -o $HOME/Scripts/dunst_ln.sh -i $HOME/Wallpapers/1.jpg
+#feh --bg-fill $HOME/Wallpapers/1.jpg &&
+wal -o $HOME/Scripts/Xresources_ln.sh -o $HOME/Scripts/rofi_fixer.sh -o $HOME/Scripts/dunst_ln.sh -i $HOME/Wallpapers/3.png
+betterlockscreen -u $HOME/Wallpapers/3.png
+#python3 $HOME/Scripts/wal_steam/wal_steam.py -w -d -s $HOME/.local/share/Steam/skins
 polybar main &
 #exec --no-startup-id feh --bg-fill ~/Wallpapers/1.jpg
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10

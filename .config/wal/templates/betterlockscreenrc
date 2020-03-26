@@ -1,0 +1,13 @@
+insidecolor=00000000
+ringcolor={color3}ff
+keyhlcolor={color6}ff
+bshlcolor={color6}ff
+separatorcolor=00000000
+insidevercolor=00000000
+insidewrongcolor={color1}ff
+ringvercolor={color3}ff
+ringwrongcolor={color3}ff
+verifcolor={color3}ff
+timecolor={color4}ff
+datecolor={color4}ff
+loginbox=00000066

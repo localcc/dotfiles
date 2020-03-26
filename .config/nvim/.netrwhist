@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/localcc/test/socket_client'
+let g:netrw_dirhist_8='/home/localcc/edits/lightdm-tiny-greeter/.git'
+let g:netrw_dirhist_7='/home/localcc/edits/lightdm-tiny-greeter'
 let g:netrw_dirhist_6='/home/localcc'
 let g:netrw_dirhist_5='/home/localcc/.config'
 let g:netrw_dirhist_4='/home/localcc/edits/lightdm-tiny-greeter/.git'

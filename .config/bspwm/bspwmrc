@@ -1,11 +1,14 @@
 #! /bin/sh
  
+WALLPAPER=$HOME/Wallpapers/2.jpg
+
 sxhkd &
 picom --vsync --experimental-backend &
 dunst -config $HOME/.config/dunst/dunstrc &
-feh --bg-fill $HOME/Wallpapers/2.jpg &&
+feh --bg-fill $WALLPAPER &
 xrdb -merge ~/.cache/wal/colors.Xresources
-wal -o $HOME/Scripts/dunst_ln.sh -i $HOME/Wallpapers/2.jpg
+wal -o $HOME/Scripts/dunst_ln.sh -i $WALLPAPER
+wpg -a $WALLPAPER
 #python3 $HOME/Scripts/wal_steam/wal_steam.py -w -d -s $HOME/.local/share/Steam/skins
 polybar main &
 #exec --no-startup-id feh --bg-fill ~/Wallpapers/1.jpg

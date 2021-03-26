@@ -3,7 +3,7 @@
 WALLPAPER=$HOME/Wallpapers/7.jpg
 
 sxhkd &
-greenclip daemon &
+nm-applet &
 picom --vsync --experimental-backend &
 dunst -config $HOME/.config/dunst/dunstrc &
 feh --bg-fill $WALLPAPER &
@@ -24,6 +24,9 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config ignore_ewmh_focus true
 
+bspc rule -a ksnip state=floating
+
+greenclip daemon &
 setxkbmap pl,ru
 setxkbmap -option 'grp:win_space_toggle'
 kitty &

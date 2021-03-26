@@ -6,13 +6,15 @@ ctrl + Return
 
 #dmenu
 alt + d
-	rofi -show run
+	rofi -combi-modi run,drun -show combi
 
 # screenshoter
 Print + {_, ctrl}
-	flameshot {gui, full -c}
+	ksnip --{rectarea, fullscreen}
 
-
+# clipboard manager
+super + v
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command "{cmd}"
 
 
 #Lock screen
@@ -26,7 +28,7 @@ super + l
 
 
 # Close current window
-ctrl + q
+ctrl + alt + q
 	bspc node focused -c
 
 
@@ -46,7 +48,6 @@ ctrl + {Left,Right,Up,Down}
 	bspc node -n {west, east, north south}
 
 # last window 
-
 alt + Tab
 	bspc node --focus last
 

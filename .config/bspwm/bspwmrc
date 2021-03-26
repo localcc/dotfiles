@@ -1,8 +1,9 @@
 #! /bin/sh
  
-WALLPAPER=$HOME/Wallpapers/2.jpg
+WALLPAPER=$HOME/Wallpapers/7.jpg
 
 sxhkd &
+greenclip daemon &
 picom --vsync --experimental-backend &
 dunst -config $HOME/.config/dunst/dunstrc &
 feh --bg-fill $WALLPAPER &
